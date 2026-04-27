@@ -19,12 +19,12 @@ proceeding to the next. Never attempt to build the full site in one pass.
     cyanDark: '#0099bb'
     white: '#f0f4f8'
     muted: '#7a8599'
-- Set up /public/images/hero/ with 7 placeholder images
+- Set up /public/images/hero/ with 12 placeholder images
 - Place /public/images/made-by-community.png placeholder
 - Confirm dev server runs
 
 ### Agent 2 — Shared Components
-- HeroCarousel.tsx (7 slides, 5s auto-advance, fade)
+- HeroCarousel.tsx (12 slides, 5s auto-advance, fade)
 - CTAButton.tsx: "Join Star Citizen Free — Get 50,000 UEC"
   → https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
 - SecondaryLink.tsx: "Learn More at o7citizen.com" → https://o7citizen.com
