@@ -7,10 +7,12 @@ Answers their question immediately, then introduces Star Citizen naturally,
 then funnels to o7citizen.com and referral signup.
 
 ## Quick Reference
-Referral code: STAR-GCQJ-N6NC
-Enlist URL: https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
-Hub: https://dayonecitizen.com
-Full network conventions: E:\Claude Code\sc-portfolio\SHARED_CONVENTIONS.md
+```
+Referral code:  STAR-GCQJ-N6NC
+Enlist URL:     https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
+Hub:            https://dayonecitizen.com
+Conventions:    E:\Claude Code\sc-portfolio\SHARED_CONVENTIONS.md
+```
 
 ## Agentic Build Instructions
 Use an agentic, incremental approach. Complete and confirm each agent before
@@ -33,7 +35,7 @@ proceeding to the next. Never attempt to build the full site in one pass.
 - HeroCarousel.tsx (12 slides, 5s auto-advance, fade)
 - CTAButton.tsx: "Join Star Citizen Free — Get 50,000 UEC"
   → https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
-- SecondaryLink.tsx: "Learn More at o7citizen.com" → https://o7citizen.com
+- SecondaryLink.tsx: "Learn More at dayonecitizen.com" → https://dayonecitizen.com
 - Footer.tsx: fan disclaimer + FTC disclosure + fankit badge
 - NavBar.tsx: minimal, logo "o7meaning.com", links: Home, In Star Citizen,
   In Gaming, FAQ
