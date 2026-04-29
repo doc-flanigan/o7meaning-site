@@ -6,6 +6,12 @@ or "what does o7 mean" from any gaming community (not just Star Citizen).
 Answers their question immediately, then introduces Star Citizen naturally,
 then funnels to o7citizen.com and referral signup.
 
+## Quick Reference
+Referral code: STAR-GCQJ-N6NC
+Enlist URL: https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
+Hub: https://dayonecitizen.com
+Full network conventions: E:\Claude Code\sc-portfolio\SHARED_CONVENTIONS.md
+
 ## Agentic Build Instructions
 Use an agentic, incremental approach. Complete and confirm each agent before
 proceeding to the next. Never attempt to build the full site in one pass.
@@ -70,12 +76,6 @@ This is the primary SEO page. Optimize aggressively.
   - JSON-LD FAQPage schema on homepage
   - npm run build must pass cleanly
 
-## Referral URL
-https://www.robertsspaceindustries.com/enlist?referral=STAR-GCQJ-N6NC
-
-## Hub Link
-https://o7citizen.com
-
 ## Color Palette
   --slate: #1a1f2e
   --slate-mid: #252d40
@@ -84,11 +84,6 @@ https://o7citizen.com
   --white: #f0f4f8
   --muted: #7a8599
 
-## Footer Spec (same as all sites)
-1. "This is an unofficial fan site not affiliated with CIG or Star Citizen."
-2. "FTC Disclosure: Referral links on this site earn the site owner an in-game
-   bonus reward when you sign up."
-3. RSI Fankit "made by community" badge
-
-## Commit Convention
-feat/fix/seo/docs: [description]
+## Network Conventions
+See `E:\Claude Code\sc-portfolio\SHARED_CONVENTIONS.md` for footer spec,
+tone rules, commit convention, tech stack, and agentic build pattern.
