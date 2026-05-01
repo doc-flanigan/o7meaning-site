@@ -1,101 +1,161 @@
-import Image from "next/image";
+import type { Metadata } from 'next'
+import HeroCarousel from '@/components/HeroCarousel'
+import CTAButton from '@/components/CTAButton'
+import SecondaryLink from '@/components/SecondaryLink'
+import { faqs } from '@/data/faq'
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: 'What Does o7 Mean? The Gaming Salute Explained',
+  description:
+    'o7 is a text emoticon salute used across gaming communities. The "o" represents a head, the "7" a raised arm. Full explanation here.',
+  alternates: { canonical: 'https://o7meaning.com' },
+  openGraph: {
+    title: 'What Does o7 Mean? The Gaming Salute Explained',
+    description:
+      'o7 is a text emoticon salute used across gaming communities. The "o" represents a head, the "7" a raised arm. Full explanation here.',
+    url: 'https://o7meaning.com',
+  },
+}
+
+const schemaFaqs = faqs.slice(0, 8)
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: schemaFaqs.map(({ question, answer }) => ({
+    '@type': 'Question',
+    name: question,
+    acceptedAnswer: { '@type': 'Answer', text: answer },
+  })),
+}
+
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      <div className="max-w-4xl mx-auto px-4 py-10 space-y-16">
+
+        {/* Above-fold answer — immediate, no scroll required */}
+        <section>
+          <h1 className="text-4xl md:text-5xl font-bold text-sc-white mb-4">
+            What Does o7 Mean?
+          </h1>
+          <div className="bg-sc-slate-mid rounded-xl p-6 border border-sc-cyan/20">
+            <p className="text-xl text-sc-white leading-relaxed">
+              <strong className="text-sc-cyan">o7 is a text emoticon representing a salute.</strong>{' '}
+              The &ldquo;o&rdquo; is a head, the &ldquo;7&rdquo; is a raised arm.
+              Gamers type it to greet, respect, or bid farewell to other players.
+            </p>
+          </div>
+        </section>
+
+        {/* Hero carousel */}
+        <HeroCarousel />
+
+        {/* Breaking down the emoticon */}
+        <section>
+          <h2 className="text-2xl font-bold text-sc-white mb-6">Breaking Down the Emoticon</h2>
+          <div className="flex items-center gap-6 flex-wrap">
+            <div className="bg-sc-slate-mid rounded-xl p-6 text-center min-w-[110px]">
+              <span className="text-5xl font-mono text-sc-cyan">o</span>
+              <p className="text-sc-muted text-sm mt-2">head</p>
+            </div>
+            <div className="text-3xl text-sc-muted font-light">+</div>
+            <div className="bg-sc-slate-mid rounded-xl p-6 text-center min-w-[110px]">
+              <span className="text-5xl font-mono text-sc-cyan">7</span>
+              <p className="text-sc-muted text-sm mt-2">raised arm</p>
+            </div>
+            <div className="text-3xl text-sc-muted font-light">=</div>
+            <div className="bg-sc-slate-mid rounded-xl p-6 text-center min-w-[110px]">
+              <span className="text-5xl font-mono text-sc-cyan">o7</span>
+              <p className="text-sc-muted text-sm mt-2">salute</p>
+            </div>
+          </div>
+          <p className="text-sc-muted mt-5 leading-relaxed">
+            Turn your head ninety degrees to the left and you can see it: a figure with a rounded
+            head raising one arm in a sharp military salute.
+          </p>
+        </section>
+
+        {/* Where did o7 come from */}
+        <section>
+          <h2 className="text-2xl font-bold text-sc-white mb-4">Where Did o7 Come From?</h2>
+          <p className="text-sc-muted leading-relaxed">
+            The salute emoticon emerged from massively multiplayer online game communities in the
+            early 2000s. Space games — where military ranks and ship commands are part of the
+            fiction — gave it fertile ground. EVE Online (a space-based online game released
+            in 2003) is widely credited as one of the first communities to make o7 a standard
+            greeting. From there it spread to other games and eventually to general gaming culture.
+          </p>
+        </section>
+
+        {/* o7 in Star Citizen */}
+        <section>
+          <h2 className="text-2xl font-bold text-sc-white mb-4">o7 in Star Citizen</h2>
+          <p className="text-sc-muted leading-relaxed mb-4">
+            Star Citizen is a space game currently in development by Cloud Imperium Games. It has
+            the largest community use of o7 outside of EVE Online. Players greet each other with
+            o7 in the game&rsquo;s chat channels, on the official forums at Roberts Space Industries
+            (the in-game fiction&rsquo;s space agency), and in community videos and streams.
+          </p>
+          <p className="text-sc-muted leading-relaxed">
+            The game&rsquo;s military setting — players take on roles as pilots, soldiers, and
+            traders in a far-future universe — makes the salute feel completely at home.
+            &ldquo;o7 citizen&rdquo; is one of the most common phrases you&rsquo;ll hear from
+            experienced players welcoming newcomers.
+          </p>
+        </section>
+
+        {/* o7 on Twitch and Discord */}
+        <section>
+          <h2 className="text-2xl font-bold text-sc-white mb-4">o7 on Twitch and Discord</h2>
+          <p className="text-sc-muted leading-relaxed">
+            On Twitch, viewers type o7 in chat to salute a streamer — often when something
+            impressive happens, or when saying goodbye at the end of a stream. The emoticon works
+            across any gaming stream, not only space games. On Discord servers, o7 functions as a
+            quick respectful greeting that takes one keystroke and needs no explanation among gamers.
+          </p>
+        </section>
+
+        {/* o7 in other games */}
+        <section>
+          <h2 className="text-2xl font-bold text-sc-white mb-4">o7 in Other Games</h2>
+          <p className="text-sc-muted leading-relaxed">
+            EVE Online and Elite Dangerous (a space exploration and combat game) have the strongest
+            traditions of o7 outside Star Citizen. Both games have military rank structures and
+            community cultures where formality and respect carry real meaning. You will also find
+            o7 in military-themed games, flight simulators, and anywhere player culture values
+            camaraderie and mutual respect.
+          </p>
+        </section>
+
+        {/* CTA block */}
+        <section className="bg-sc-slate-mid rounded-xl p-8 border border-sc-cyan/20 text-center space-y-4">
+          <h2 className="text-2xl font-bold text-sc-white">New to Star Citizen?</h2>
+          <p className="text-sc-muted max-w-xl mx-auto">
+            Star Citizen is free to try. Sign up with a referral code and receive 50,000 UEC
+            (United Earth Credits — the in-game currency) to get started, at no extra cost.
+          </p>
+          <CTAButton />
+          <p className="text-sc-muted text-sm">
+            Use referral code <strong className="text-sc-white">STAR-GCQJ-N6NC</strong> at signup.
+          </p>
+        </section>
+
+        {/* Explore Star Citizen Terms */}
+        <section className="text-center space-y-3">
+          <h2 className="text-xl font-semibold text-sc-white">Explore Star Citizen Terms</h2>
+          <p className="text-sc-muted">
+            Learn more Star Citizen language, mechanics, and lore at the community hub.
+          </p>
+          <SecondaryLink />
+        </section>
+
+      </div>
+    </>
+  )
 }
