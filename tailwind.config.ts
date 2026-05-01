@@ -1,19 +1,19 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'sc-slate':     '#1a1f2e',
+        'sc-slate-mid': '#252d40',
+        'sc-cyan':      '#00d4ff',
+        'sc-cyan-dark': '#0099bb',
+        'sc-white':     '#f0f4f8',
+        'sc-muted':     '#7a8599',
       },
     },
   },
   plugins: [],
-};
-export default config;
+}
+export default config
