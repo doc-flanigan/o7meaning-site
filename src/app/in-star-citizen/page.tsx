@@ -12,11 +12,37 @@ export const metadata: Metadata = {
     description:
       'In Star Citizen, o7 is the universal greeting between players. Learn how to use it, when to use it, and how to get started in the game.',
     url: 'https://o7meaning.com/in-star-citizen',
+    images: [
+      {
+        url: '/images/og-default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'o7 in Star Citizen — the salute greeting explained',
+      },
+    ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'o7 in Star Citizen — What It Means and How to Use It',
+    description:
+      'In Star Citizen, o7 is the universal greeting between players. Learn how to use it, when to use it, and how to get started.',
+    images: ['/images/og-default.jpg'],
+  },
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://o7meaning.com' },
+    { '@type': 'ListItem', position: 2, name: 'o7 in Star Citizen', item: 'https://o7meaning.com/in-star-citizen' },
+  ],
 }
 
 export default function InStarCitizenPage() {
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <div className="max-w-4xl mx-auto px-4 py-10 space-y-12">
 
       <section>
@@ -98,5 +124,6 @@ export default function InStarCitizenPage() {
       </div>
 
     </div>
+    </>
   )
 }

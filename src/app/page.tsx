@@ -14,6 +14,21 @@ export const metadata: Metadata = {
     description:
       'o7 is a text emoticon salute used across gaming communities. The "o" represents a head, the "7" a raised arm. Full explanation here.',
     url: 'https://o7meaning.com',
+    images: [
+      {
+        url: '/images/og-default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'o7 — the gaming salute explained at o7meaning.com',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'What Does o7 Mean? The Gaming Salute Explained',
+    description:
+      'o7 is a text emoticon salute used across gaming communities. The "o" represents a head, the "7" a raised arm.',
+    images: ['/images/og-default.jpg'],
   },
 }
 
@@ -29,13 +44,19 @@ const faqSchema = {
   })),
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://o7meaning.com' },
+  ],
+}
+
 export default function HomePage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <div className="max-w-4xl mx-auto px-4 py-10 space-y-16">
 

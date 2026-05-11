@@ -12,7 +12,31 @@ export const metadata: Metadata = {
     description:
       'Answers to the most common questions about o7: what it means, where it came from, and how it is used in Star Citizen and other games.',
     url: 'https://o7meaning.com/faq',
+    images: [
+      {
+        url: '/images/og-default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'o7 FAQ — everything about the gaming salute',
+      },
+    ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'FAQ — Everything About o7 and Star Citizen',
+    description:
+      'Answers to the most common questions about o7: what it means, where it came from, and how it is used in gaming.',
+    images: ['/images/og-default.jpg'],
+  },
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://o7meaning.com' },
+    { '@type': 'ListItem', position: 2, name: 'FAQ', item: 'https://o7meaning.com/faq' },
+  ],
 }
 
 const faqSchema = {
@@ -28,10 +52,8 @@ const faqSchema = {
 export default function FAQPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <div className="max-w-4xl mx-auto px-4 py-10 space-y-10">
         <section>
