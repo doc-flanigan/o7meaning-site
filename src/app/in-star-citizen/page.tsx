@@ -68,6 +68,18 @@ export default function InStarCitizenPage() {
           (RSI) forums, they are greeting another player as a fellow citizen of the in-game
           universe. It signals: &ldquo;I respect you, fly safe, and good luck out there.&rdquo;
         </p>
+        <p className="text-sc-muted text-sm mt-6 leading-relaxed">
+          If you&apos;re curious about Star Citizen,{' '}
+          <a
+            href="https://dayonecitizen.com"
+            className="text-sc-cyan underline hover:text-sc-cyan-dark"
+            target="_blank"
+            rel="noopener"
+          >
+            DayOneCitizen.com
+          </a>{' '}
+          is a plain-English guide for new players — no jargon, just what you actually need to know on your first day.
+        </p>
       </section>
 
       <section>
