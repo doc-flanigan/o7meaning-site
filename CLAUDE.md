@@ -108,3 +108,27 @@ Added 2026-05-17. Every referral CTA click fires a background POST to `/api/log`
 - [ ] Click CTA **with** adblocker enabled → Sheet row appears within 5s
 - [ ] Click CTA **with** adblocker enabled → Discord embed appears in #referral-clicks
 - [ ] Click CTA **without** adblocker → same as above
+
+---
+
+## SEO
+
+**Network role:** Broadest cold-traffic funnel satellite
+**Search engine:** Both
+
+**Primary keywords:**
+- "o7 meaning"
+- "what does o7 mean"
+- "o7 gaming"
+- "o7 salute meaning"
+- "what is o7"
+
+**Audience note:** Visitors come from any gaming community (Twitch, Reddit, Discord) with zero Star Citizen context. Answer their question immediately. Introduce SC naturally. Funnel to dayonecitizen.com BEFORE hitting the referral CTA — cold traffic needs the onboarding experience first.
+
+**Cross-links this site must send (body copy only):**
+- → dayonecitizen.com: Primary funnel in /in-star-citizen page: "o7 is the Star Citizen community salute — if you're new to the game, start here"
+
+**Do not:**
+- Place cross-portfolio links in footers or link lists — editorial/body copy only
+
+**Full strategy:** `E:\Claude Code\sc-portfolio\docs\seo\README.md`
