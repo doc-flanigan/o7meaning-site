@@ -10,7 +10,7 @@ export default function Footer() {
           Rights LLC.
         </p>
         <p>
-          Affiliate disclosure: This site uses Star Citizen referral links. Referral code owners may receive an in-game bonus if you sign up. Your rewards are not affected.
+          Affiliate disclosure: If you create a Star Citizen account using referral code STAR-GCQJ-N6NC, the site owner may receive an in-game bonus. Your 50,000 aUEC new-player bonus is not affected.
         </p>
         <div className="pt-2">
           <Image

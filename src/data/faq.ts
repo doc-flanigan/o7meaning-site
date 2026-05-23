@@ -81,11 +81,11 @@ export const faqs: FAQ[] = [
   {
     question: 'What does UEC mean in Star Citizen?',
     answer:
-      'UEC stands for United Earth Credits — the in-game currency of Star Citizen. New players receive 50,000 UEC when they sign up using a referral code like STAR-GCQJ-N6NC.',
+      'UEC stands for United Earth Credits — the in-game currency of Star Citizen. New players get a 5,000 aUEC credit just for signing up with a referral code like STAR-GCQJ-N6NC. When they make their first pledge (any starter package), an additional 50,000 aUEC bonus is applied automatically.',
   },
   {
     question: 'What is a referral code in Star Citizen?',
     answer:
-      "A referral code is a short code tied to an existing player's account. When a new player uses one during signup, both the new player and the referrer receive in-game rewards. The new player gets 50,000 UEC at no extra cost.",
+      "A referral code is a short code tied to an existing player's account. When a new player uses one during signup, both the new player and the referrer receive in-game rewards. The new player gets a 5,000 aUEC signup credit, plus an additional 50,000 aUEC bonus when they make their first pledge.",
   },
 ]
