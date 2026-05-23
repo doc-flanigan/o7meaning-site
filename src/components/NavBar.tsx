@@ -3,7 +3,6 @@ import Link from 'next/link'
 const links = [
   { href: '/',                label: 'Home'           },
   { href: '/in-star-citizen', label: 'In Star Citizen' },
-  { href: '/in-gaming',       label: 'In Gaming'      },
   { href: '/faq',             label: 'FAQ'            },
 ]
 

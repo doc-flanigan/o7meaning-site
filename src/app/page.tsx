@@ -158,8 +158,9 @@ export default function HomePage() {
         <section className="bg-sc-slate-mid rounded-xl p-8 border border-sc-cyan/20 text-center space-y-4">
           <h2 className="text-2xl font-bold text-sc-white">New to Star Citizen?</h2>
           <p className="text-sc-muted max-w-xl mx-auto">
-            Star Citizen is free to try. Sign up with a referral code and receive 50,000 UEC
-            (United Earth Credits — the in-game currency) to get started, at no extra cost.
+            Star Citizen is free to try. Sign up with referral code{' '}
+            <strong className="text-sc-white">STAR-GCQJ-N6NC</strong>{' '}
+            and receive 50,000 UEC (United Earth Credits — the in-game currency) automatically at registration, at no extra cost.
           </p>
           <CTAButton />
           <p className="text-sc-muted text-sm">

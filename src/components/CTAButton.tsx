@@ -29,7 +29,7 @@ export default function CTAButton({ trackingLabel }: Props) {
     <a
       href={href}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener noreferrer sponsored"
       className="inline-block bg-sc-cyan hover:bg-sc-cyan-dark text-sc-slate font-bold px-8 py-4 rounded-lg text-lg transition-colors shadow-lg"
       onClick={handleClick}
     >

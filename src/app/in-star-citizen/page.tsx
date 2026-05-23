@@ -121,9 +121,9 @@ export default function InStarCitizenPage() {
       <section>
         <h2 className="text-2xl font-bold text-sc-white mb-4">Star Citizen Is Free to Try</h2>
         <p className="text-sc-muted leading-relaxed mb-6">
-          You do not need to spend money to start playing Star Citizen. Create a free account,
-          use referral code <strong className="text-sc-white">STAR-GCQJ-N6NC</strong>,
-          and receive 50,000 UEC (United Earth Credits — the in-game currency) automatically.
+          You do not need to spend money to start playing Star Citizen. Create a free account
+          using referral code <strong className="text-sc-white">STAR-GCQJ-N6NC</strong>{' '}
+          and receive 50,000 UEC (United Earth Credits — the in-game currency) automatically at registration.
           During Free Fly events, the full game is playable without any purchase.
         </p>
         <CTAButton />
