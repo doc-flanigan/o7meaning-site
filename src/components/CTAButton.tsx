@@ -30,7 +30,7 @@ export default function CTAButton({ trackingLabel }: Props) {
       href={href}
       target="_blank"
       rel="noopener noreferrer sponsored"
-      className="inline-block bg-sc-cyan hover:bg-sc-cyan-dark text-sc-slate font-bold px-8 py-4 rounded-lg text-lg transition-colors shadow-lg"
+      className="inline-block w-full sm:w-auto bg-sc-cyan hover:bg-sc-cyan-dark text-sc-slate font-bold px-8 py-4 rounded-lg text-lg transition-colors shadow-lg text-center"
       onClick={handleClick}
     >
       Join Star Citizen Free — Get 50,000 UEC

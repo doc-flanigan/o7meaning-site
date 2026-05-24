@@ -80,7 +80,22 @@ export default function HomePage() {
         {/* Breaking down the emoticon */}
         <section>
           <h2 className="text-2xl font-bold text-sc-white mb-6">Breaking Down the Emoticon</h2>
-          <div className="flex items-center gap-6 flex-wrap">
+          {/* Mobile: 2-column grid; md+: single flex row */}
+          <div className="grid grid-cols-2 gap-4 md:hidden">
+            <div className="bg-sc-slate-mid rounded-xl p-6 text-center">
+              <span className="text-5xl font-mono text-sc-cyan">o</span>
+              <p className="text-sc-muted text-sm mt-2">head</p>
+            </div>
+            <div className="bg-sc-slate-mid rounded-xl p-6 text-center">
+              <span className="text-5xl font-mono text-sc-cyan">7</span>
+              <p className="text-sc-muted text-sm mt-2">raised arm</p>
+            </div>
+            <div className="bg-sc-slate-mid rounded-xl p-6 text-center col-span-2">
+              <span className="text-5xl font-mono text-sc-cyan">o7</span>
+              <p className="text-sc-muted text-sm mt-2">salute</p>
+            </div>
+          </div>
+          <div className="hidden md:flex items-center gap-6">
             <div className="bg-sc-slate-mid rounded-xl p-6 text-center min-w-[110px]">
               <span className="text-5xl font-mono text-sc-cyan">o</span>
               <p className="text-sc-muted text-sm mt-2">head</p>
