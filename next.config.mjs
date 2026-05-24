@@ -4,16 +4,7 @@ const nextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
   },
-  async redirects() {
-    return [
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'www.o7meaning.com' }],
-        destination: 'https://o7meaning.com/:path*',
-        permanent: true,
-      },
-    ];
-  },
+  // www → apex redirect is handled by Vercel's Domains config — do not add a duplicate rule here.
 };
 
 export default nextConfig;
