@@ -20,5 +20,9 @@
       "Skill(schedule)",
       "Bash(gh repo *)"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "gsc"
+  ],
+  "enableAllProjectMcpServers": true
 }
