@@ -132,3 +132,7 @@ Added 2026-05-17. Every referral CTA click fires a background POST to `/api/log`
 - Place cross-portfolio links in footers or link lists — editorial/body copy only
 
 **Full strategy:** `E:\Claude Code\sc-portfolio\docs\seo\README.md`
+
+## Claims ledger (network-wide)
+
+Fact-checked claims are tracked in the portfolio claims ledger: `E:\Claude Code\sc-portfolio\docs\claims\` — one md file per claim (canonical text, status, official sources, lastVerified, usage map). Before adding or rewording a factual claim on this site, grep the ledger; a `verified` entry is network canon. Any edit that adds, changes, or removes a factual claim must update the matching claim file's `usage` list (or create the file — see the ledger README.md).
