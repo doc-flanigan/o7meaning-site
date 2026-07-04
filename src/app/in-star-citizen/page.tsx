@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import CTAButton from '@/components/CTAButton'
+import { PageSources } from '@/components/PageSources'
 
 export const metadata: Metadata = {
   title: 'o7 in Star Citizen — What It Means and How to Use It',
@@ -136,6 +137,8 @@ export default function InStarCitizenPage() {
       </div>
 
     </div>
+
+    <PageSources route="/in-star-citizen" />
     </>
   )
 }

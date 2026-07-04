@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import CTAButton from '@/components/CTAButton'
+import { PageSources } from '@/components/PageSources'
 import { faqs } from '@/data/faq'
 
 export const metadata: Metadata = {
@@ -84,6 +85,8 @@ export default function FAQPage() {
           <CTAButton />
         </section>
       </div>
+
+      <PageSources route="/faq" />
     </>
   )
 }

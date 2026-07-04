@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "gen-sources": "node ../docs/claims/gen-sources.mjs o7meaning.com src/data/page-sources.generated.json",
     "indexnow": "node scripts/indexnow.mjs",
     "postbuild": "node scripts/indexnow.mjs || true"
   },
