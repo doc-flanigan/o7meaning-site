@@ -177,7 +177,7 @@ export default function HomePage() {
             <strong className="text-sc-white">STAR-GCQJ-N6NC</strong>{' '}
             and receive 50,000 UEC (United Earth Credits — the in-game currency) automatically at registration, at no extra cost.
           </p>
-          <CTAButton />
+          <CTAButton trackingLabel="home-new-to-star-citizen" />
           <p className="text-sc-muted text-sm">
             Use referral code <strong className="text-sc-white">STAR-GCQJ-N6NC</strong> at signup.
           </p>

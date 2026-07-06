@@ -82,7 +82,7 @@ export default function FAQPage() {
             Create a free account and get 50,000 UEC (United Earth Credits — the in-game currency)
             with referral code <strong className="text-sc-white">STAR-GCQJ-N6NC</strong>.
           </p>
-          <CTAButton />
+          <CTAButton trackingLabel="faq-ready-to-try" />
         </section>
       </div>
 

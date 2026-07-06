@@ -127,7 +127,7 @@ export default function InStarCitizenPage() {
           and receive 50,000 UEC (United Earth Credits — the in-game currency) automatically at registration.
           During Free Fly events, the full game is playable without any purchase.
         </p>
-        <CTAButton />
+        <CTAButton trackingLabel="in-star-citizen-free-to-try" />
       </section>
 
       <div className="pt-4">
