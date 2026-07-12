@@ -53,6 +53,11 @@ const websiteSchema = {
   url: 'https://o7meaning.com',
   description:
     'o7 is a text emoticon salute used across gaming communities. Explained in plain English.',
+  author: {
+    '@type': 'Person',
+    name: 'Doc_Flanigan',
+    url: 'https://dayonecitizen.com',
+  },
 }
 
 const organizationSchema = {
@@ -61,6 +66,11 @@ const organizationSchema = {
   name: 'o7meaning.com',
   url: 'https://o7meaning.com',
   description: 'Fan-made Star Citizen community resource by Doc_Flanigan. Not affiliated with Cloud Imperium Games.',
+  founder: {
+    '@type': 'Person',
+    name: 'Doc_Flanigan',
+    url: 'https://dayonecitizen.com',
+  },
 }
 
 export default function RootLayout({
