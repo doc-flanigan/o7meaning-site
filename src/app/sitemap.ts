@@ -5,6 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: base,                      lastModified: new Date(), changeFrequency: 'monthly', priority: 1.0 },
     { url: `${base}/in-star-citizen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/in-gaming`,       lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/faq`,             lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
   ]
 }
