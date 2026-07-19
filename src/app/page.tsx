@@ -7,12 +7,12 @@ import { faqs } from '@/data/faq'
 export const metadata: Metadata = {
   title: 'What Does o7 Mean? The Gaming Salute Explained',
   description:
-    'o7 is a salute emoticon used across gaming — on Twitch, Discord, EVE Online, and Star Citizen. The "o" is a head, the "7" a raised arm. Here is what o7 means and how to use it.',
+    'o7 is a salute emoticon used across gaming. The "o" is a head, the "7" a raised arm. What o7 means, where it came from, and how to use it.',
   alternates: { canonical: 'https://o7meaning.com' },
   openGraph: {
     title: 'What Does o7 Mean? The Gaming Salute Explained',
     description:
-      'o7 is a salute emoticon used across gaming — on Twitch, Discord, EVE Online, and Star Citizen. The "o" is a head, the "7" a raised arm. Here is what o7 means and how to use it.',
+      'o7 is a salute emoticon used across gaming. The "o" is a head, the "7" a raised arm. What o7 means, where it came from, and how to use it.',
     url: 'https://o7meaning.com',
     images: [
       {

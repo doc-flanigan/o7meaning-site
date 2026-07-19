@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'o7 Meaning in Gaming — The Salute Used Across Gaming Communities',
+  title: 'o7 Meaning in Gaming — The Salute Explained',
   description:
-    'In gaming, o7 is a text emoticon salute — the "o" is a head, the "7" a raised arm. Learn how EVE Online, Elite Dangerous, Star Citizen, Twitch, and Discord communities use it.',
+    'In gaming, o7 is a text salute — the "o" is a head, the "7" a raised arm. How EVE, Elite Dangerous, Star Citizen, and Twitch use it.',
   alternates: { canonical: 'https://o7meaning.com/in-gaming' },
   openGraph: {
     title: 'o7 Meaning in Gaming — The Salute Used Across Gaming Communities',
