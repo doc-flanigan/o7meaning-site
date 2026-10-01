@@ -1,19 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  images: {
-    formats: ['image/avif', 'image/webp'],
-  },
-  // www → apex redirect is handled by Vercel's Domains config — do not add a duplicate rule here.
   async redirects() {
+    // SUNSET 2026-10-01: site retired per the October domain review
+    // (docs/seo/kill-review-2026-10.md — 0 referral clicks since Jul 6,
+    // 0 Google clicks ever, AI-bot fetches down 85%). The whole domain
+    // (every path and host, incl. the vercel.app alias) now 301s to the
+    // hub's glossary entry for o7.
     return [
       {
-        // vercel.app alias served a full indexable duplicate (network-wide
-        // GSC duplicate-canonical fix, 2026-07-18). Exact match keeps
-        // preview URLs working.
         source: '/:path*',
-        has: [{ type: 'host', value: 'o7meaning-site.vercel.app' }],
-        destination: 'https://o7meaning.com/:path*',
+        destination: 'https://dayonecitizen.com/glossary#term-o7',
         permanent: true,
       },
     ];
