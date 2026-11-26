@@ -144,3 +144,6 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Claude Code per-machine permissions (never commit)
+.claude/settings.local.json
